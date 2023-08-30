@@ -1,0 +1,157 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #ecb46a,#99a266,#418b60,#086e59,#0b5455);
+    height: 100vh;
+}
+
+.conteudo{
+    position: relative;
+    top: 20%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 10%;
+    margin: 5%;
+    
+          
+}
+
+.conteudo-filho {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 4%;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    align-items: center;
+    color: black;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
+    font-size: 1.6rem;
+    
+}
+.conteudo-filho:hover{
+    background-color: rgb(230, 230, 230);
+}
+.inicio_texto{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* Estilos adicionais para o botão, para torná-lo mais visível */
+.btn {
+    width: 100%;
+    margin: 2%;
+    padding: 1% 3%;
+    width: 60%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #0b5455;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.4s;
+}
+
+
+.btn:hover {
+    background-color: #031616f6;
+}
+
+#btn_inicio{
+    border-radius: 10px;
+    width: 10%;
+    margin: 2%;
+    padding: 1% 3%;
+}
+
+.conteudo-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inicio{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    font-size: 1rem;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0,0.5);
+    align-items: center;
+}
+
+form{
+    width: 25%;
+    font-size: 1.5rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0,0.5);
+}
+input{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+#error_message {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* para navegadores que não suportam word-wrap */
+}
+
+#submit_id{
+    width: 100%;
+}
+
+
+@media (max-width:1000px) {
+    form{
+        width: 40%;
+    }
+    .conteudo-filho{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:700px) {
+    form{
+        width: 60%;
+    }
+    
+    .inicio_texto{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    #btn_inicio{
+        width: 20%;
+    }
+    .conteudo-filho{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:500px) {
+    form{
+        width: 80%;
+    }
+    .inicio{
+        flex-direction: column;
+    }
+
+}
